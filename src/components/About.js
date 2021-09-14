@@ -40,8 +40,11 @@ const StyleAbout = styled.div`
 	}
 	span {
 		font-size: 1rem;
-		padding: 10px;
-		margin: 1px;
+		padding: 3px;
+		margin: 0;
+	}
+	span:last-child {
+		margin-bottom: 10px;
 	}
 
 	article {

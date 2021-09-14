@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Loader from "./Loader";
 import styled from "styled-components";
 import { withRouter } from "react-router";
-import { NavLink, useHistory } from "react-router-dom";
 import { FcFolder, FcOpenedFolder } from "react-icons/fc";
 import DelayLink from "react-delay-link";
 
@@ -56,11 +55,6 @@ const Home = () => {
 		{
 			id: 3,
 			title: "contact",
-			open: false,
-		},
-		{
-			id: 4,
-			title: "resume",
 			open: false,
 		},
 	];

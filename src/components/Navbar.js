@@ -35,6 +35,13 @@ const NavBar = () => {
 				<Nav.Item>
 					<Nav.Link href="/contact">contact</Nav.Link>
 				</Nav.Item>
+				<Nav.Item>
+					<Nav.Link
+						href="https://docs.google.com/document/d/1IRoUr95figylabBdi2EN0RTwRO8q6AZ8n2mW5150Xts/edit"
+						target="_blank">
+						resume
+					</Nav.Link>
+				</Nav.Item>
 			</Nav>
 		</StyledNav>
 	);

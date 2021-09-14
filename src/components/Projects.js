@@ -10,6 +10,7 @@ const StyleContainer = styled.div`
 	align-items: center;
 	flex-direction: column;
 	margin-top: 80px;
+	margin-bottom: 20px;
 `;
 
 const StyleFolder = styled.div``;

@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Loader from "./Loader";
 import styled from "styled-components";
 import { withRouter } from "react-router";
-import { FcFolder, FcOpenedFolder } from "react-icons/fc";
+import { FcFolder, FcOpenedFolder, FcFile } from "react-icons/fc";
 import DelayLink from "react-delay-link";
 
 const StyledHome = styled.main`
@@ -103,6 +103,15 @@ const Home = () => {
 								</StyledIcons>
 							);
 						})}
+						<StyledIcons>
+							<a
+								href="https://docs.google.com/document/d/1IRoUr95figylabBdi2EN0RTwRO8q6AZ8n2mW5150Xts/edit?usp=sharing"
+								target="_blank"
+								rel="noreferrer">
+								<FcFile size={85} />
+							</a>
+							resume
+						</StyledIcons>
 					</StyledIconsContainer>
 				</>
 			)}

@@ -35,8 +35,8 @@ const StyleAbout = styled.div`
 	overflow: hidden;
 
 	.welcome {
-		font-size: 6rem;
-		margin: 0;
+		margin-top: 80px;
+		font-size: 5rem;
 	}
 	span {
 		font-size: 1rem;
@@ -51,6 +51,9 @@ const StyleAbout = styled.div`
 		color: darkgoldenrod;
 	}
 	@media (max-width: 720px) {
+		article {
+			font-size: 14px;
+		}
 		height: auto;
 	}
 `;

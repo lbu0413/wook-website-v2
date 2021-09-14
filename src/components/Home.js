@@ -16,6 +16,8 @@ const StyledHome = styled.main`
 	background-color: white;
 	height: 100vh;
 	width: 100%;
+	overflow-y: hidden;
+
 	.welcome {
 		font-size: 10rem;
 		margin: 0;
@@ -43,12 +45,12 @@ const Home = () => {
 	const initialFolders = [
 		{
 			id: 1,
-			title: "projects",
+			title: "about",
 			open: false,
 		},
 		{
 			id: 2,
-			title: "about",
+			title: "projects",
 			open: false,
 		},
 		{

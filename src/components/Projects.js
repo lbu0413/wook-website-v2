@@ -4,9 +4,15 @@ import { projectsData } from "../data/projectsData";
 import { FcOpenedFolder } from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
 
-const StyleFolder = styled.div`
-	margin: 10px;
+const StyleContainer = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 80px;
 `;
+
+const StyleFolder = styled.div``;
 
 const StyledH4 = styled.h4`
 	color: gray;
@@ -49,11 +55,11 @@ const StyleEachProject = styled.div`
 
 const Projects = () => {
 	return (
-		<>
+		<StyleContainer>
 			<StyleFolder>
-				<FcOpenedFolder size={85} />
+				<FcOpenedFolder size={80} />
 			</StyleFolder>
-			<StyledH4>click on image to experience the project</StyledH4>
+			<StyledH4>click on each image to experience the project</StyledH4>
 			<StyledProjects>
 				{projectsData.map((project) => (
 					<StyleEachProject className="eachPro">
@@ -82,7 +88,7 @@ const Projects = () => {
 					</StyleEachProject>
 				))}
 			</StyledProjects>
-		</>
+		</StyleContainer>
 	);
 };
 

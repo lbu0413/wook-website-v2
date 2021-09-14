@@ -4,8 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 
 const StyledLoader = styled.div`
-	font-family: "IBM Plex Sans", sans-serif;
-	background-color: whitesmoke;
+	background-color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;

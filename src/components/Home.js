@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Loader from "./Loader";
-import NavBar from "./Navbar";
-import Projects from "./Projects";
-import About from "./About";
 import styled from "styled-components";
 import { NavLink, Route, Link } from "react-router-dom";
-import { FcFolder } from "react-icons/fc";
-import { FcOpenedFolder } from "react-icons/fc";
+import { FcFolder, FcOpenedFolder } from "react-icons/fc";
 
 const StyledHome = styled.main`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: whitesmoke;
+	background-color: white;
 	height: 100vh;
 `;
 
@@ -35,22 +31,22 @@ const Home = () => {
 	const initialFolders = [
 		{
 			id: 1,
-			title: "Projects",
+			title: "projects",
 			open: false,
 		},
 		{
 			id: 2,
-			title: "About",
+			title: "about",
 			open: false,
 		},
 		{
 			id: 3,
-			title: "Contact",
+			title: "contact",
 			open: false,
 		},
 		{
 			id: 4,
-			title: "Resume",
+			title: "resume",
 			open: false,
 		},
 	];
@@ -80,7 +76,6 @@ const Home = () => {
 				<Loader />
 			) : (
 				<>
-					<NavBar />
 					<StyledIconsContainer>
 						{folders.map((folder) => {
 							return (

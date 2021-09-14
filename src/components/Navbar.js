@@ -4,11 +4,8 @@ import styled from "styled-components";
 import wookIcon from "../img/wook-icon.png";
 
 const StyledNav = styled.nav`
-	display: flex;
-	justify-content: center;
-	top: 0;
-	left: 0;
-	position: fixed;
+	background-color: whitesmoke;
+
 	.wookIcon {
 		width: 100px;
 	}
@@ -17,20 +14,26 @@ const StyledNav = styled.nav`
 const NavBar = () => {
 	return (
 		<StyledNav>
-			<Nav fill variant="tabs" defaultActiveKey="/home">
+			<Nav
+				variant="tab"
+				defaultActiveKey="/home"
+				className="align-items-center">
 				<Nav.Item>
 					<Nav.Link href="/">
 						<img src={wookIcon} alt="wook-icon" className="wookIcon" />
 					</Nav.Link>
 				</Nav.Item>
 				<Nav.Item>
-					<Nav.Link href="/Projects">Projects</Nav.Link>
+					<Nav.Link href="/projects">projects</Nav.Link>
 				</Nav.Item>
 				<Nav.Item>
-					<Nav.Link href="/About">About</Nav.Link>
+					<Nav.Link href="/about">about</Nav.Link>
 				</Nav.Item>
 				<Nav.Item>
-					<Nav.Link href="/Resume">Resume</Nav.Link>
+					<Nav.Link href="/contact">contact</Nav.Link>
+				</Nav.Item>
+				<Nav.Item>
+					<Nav.Link href="/resume">resume</Nav.Link>
 				</Nav.Item>
 			</Nav>
 		</StyledNav>

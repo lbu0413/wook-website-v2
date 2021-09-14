@@ -27,7 +27,7 @@ const About = () => {
 	return (
 		<StyleAbout>
 			<Image src={self} roundedCircle className="self" />
-			<Card style={{ width: "50rem" }}>
+			<Card style={{ width: "30rem" }}>
 				<Card.Body>
 					<Card.Text>Hi, my name is Wook.</Card.Text>
 					<Card.Text>

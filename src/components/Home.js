@@ -2,16 +2,27 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Loader from "./Loader";
 import styled from "styled-components";
-import { NavLink, Route, Link } from "react-router-dom";
+import { withRouter } from "react-router";
+import { NavLink, useHistory } from "react-router-dom";
 import { FcFolder, FcOpenedFolder } from "react-icons/fc";
+import DelayLink from "react-delay-link";
 
 const StyledHome = styled.main`
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
 	height: 100vh;
+	width: 100%;
+	.welcome {
+		font-size: 10rem;
+		margin: 0;
+	}
+	.welcome-text {
+		font-size: 3rem;
+	}
 `;
 
 const StyledIcons = styled.div`
@@ -19,6 +30,7 @@ const StyledIcons = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
+	cursor: pointer;
 `;
 
 const StyledIconsContainer = styled.div`
@@ -69,26 +81,28 @@ const Home = () => {
 		});
 		setFolders(updatedFolders);
 	};
-
 	return (
 		<StyledHome>
 			{loading ? (
 				<Loader />
 			) : (
 				<>
+					<p className="welcome-text">Hello, My name is Wook</p>
+					<p className="welcome">🙋🏻‍♂️</p>
 					<StyledIconsContainer>
 						{folders.map((folder) => {
 							return (
 								<StyledIcons key={folder.id}>
-									<NavLink
-										to={"/" + folder.title}
-										onClick={() => handleFolders(folder.id)}>
+									<DelayLink
+										delay={500}
+										clickAction={() => handleFolders(folder.id)}
+										to={"/" + folder.title}>
 										{folder.open === false ? (
-											<FcFolder size={100} />
+											<FcFolder size={85} />
 										) : (
-											<FcOpenedFolder size={100} />
+											<FcOpenedFolder size={85} />
 										)}
-									</NavLink>
+									</DelayLink>
 									{folder.title}
 								</StyledIcons>
 							);
@@ -100,4 +114,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default withRouter(Home);

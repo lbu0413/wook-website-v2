@@ -5,9 +5,9 @@ import wookIcon from "../img/wook-icon.png";
 
 const StyledNav = styled.nav`
 	background-color: whitesmoke;
-
+	width: 100%;
 	.wookIcon {
-		width: 100px;
+		width: 4rem;
 	}
 `;
 
@@ -31,9 +31,6 @@ const NavBar = () => {
 				</Nav.Item>
 				<Nav.Item>
 					<Nav.Link href="/contact">contact</Nav.Link>
-				</Nav.Item>
-				<Nav.Item>
-					<Nav.Link href="/resume">resume</Nav.Link>
 				</Nav.Item>
 			</Nav>
 		</StyledNav>

@@ -96,11 +96,17 @@ const About = () => {
 			<p>{'")'}</p>
 			<span>
 				const learnMoreAboutMe = [
-				<a href="https://www.github.com/lbu0413">
+				<a
+					href="https://www.github.com/lbu0413"
+					target="_blank"
+					rel="noreferrer">
 					<AiFillGithub size={25} />
 				</a>
 				,
-				<a href="https://www.linkedin.com/in/vvooklee/">
+				<a
+					href="https://www.linkedin.com/in/vvooklee/"
+					target="_blank"
+					rel="noreferrer">
 					<AiFillLinkedin size={25} />
 				</a>
 				]

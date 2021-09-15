@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Loader from "./Loader";
 import styled from "styled-components";
-import { withRouter } from "react-router";
 import { FcFolder, FcOpenedFolder, FcFile } from "react-icons/fc";
+import { EmojiProvider, Emoji } from "react-apple-emojis";
+import emojiData from "react-apple-emojis/lib/data.json";
 import DelayLink from "react-delay-link";
 
 const StyledHome = styled.main`
@@ -14,15 +15,15 @@ const StyledHome = styled.main`
 	align-items: center;
 	background-color: white;
 	height: 100vh;
-	width: 100%;
+	width: 90%;
+	margin: auto;
 	overflow-y: hidden;
 
-	.welcome {
-		font-size: 10rem;
-		margin: 0;
-	}
 	.welcome-text {
 		font-size: 3rem;
+	}
+	.emoji {
+		image-resolution: inherit;
 	}
 `;
 
@@ -84,7 +85,9 @@ const Home = () => {
 			) : (
 				<>
 					<p className="welcome-text">Hello, My name is Wook</p>
-					<p className="welcome">🙋🏻‍♂️</p>
+					<EmojiProvider data={emojiData}>
+						<Emoji name="man-raising-hand-light-skin-tone" className="emoji" />
+					</EmojiProvider>
 					<StyledIconsContainer>
 						{folders.map((folder) => {
 							return (
@@ -119,4 +122,4 @@ const Home = () => {
 	);
 };
 
-export default withRouter(Home);
+export default Home;

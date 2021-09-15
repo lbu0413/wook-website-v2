@@ -18,6 +18,8 @@ import {
 	SiEslint,
 	SiFirebase,
 } from "react-icons/si";
+import { EmojiProvider, Emoji } from "react-apple-emojis";
+import emojiData from "react-apple-emojis/lib/data.json";
 
 const StyleAbout = styled.div`
 	margin: 10px;
@@ -34,9 +36,8 @@ const StyleAbout = styled.div`
 	height: 100vh;
 	overflow: hidden;
 
-	.welcome {
-		margin-top: 80px;
-		font-size: 5rem;
+	.emoji {
+		margin-top: 100px;
 	}
 	span {
 		font-size: 1rem;
@@ -64,7 +65,9 @@ const StyleAbout = styled.div`
 const About = () => {
 	return (
 		<StyleAbout>
-			<span className="welcome">🙋🏻‍♂️</span>
+			<EmojiProvider data={emojiData}>
+				<Emoji className="emoji" name="man-raising-hand-light-skin-tone" />
+			</EmojiProvider>
 			<p>Console.log("</p>
 			<article>Hello, my name is Wook</article>
 			<article>

@@ -9294,6 +9294,11 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-apple-emojis@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-apple-emojis/-/react-apple-emojis-2.0.2.tgz#cb14c7e5b9e06906339e2920373d428a5fbdd446"
+  integrity sha512-uizDr2eH1Ue/Z7Imz6zPWat0r/ce3gE+QXJrprlxChl6w1OuicjLuTBR5MV4hwxdJIgdfeOm4ObUMjkERReDfg==
+
 react-bootstrap@^2.0.0-beta.6:
   version "2.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-2.0.0-beta.6.tgz#983e0e2be718384aded800de10e9aceb581a0188"

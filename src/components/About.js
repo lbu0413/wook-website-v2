@@ -68,7 +68,7 @@ const About = () => {
 			<EmojiProvider data={emojiData}>
 				<Emoji className="emoji" name="man-raising-hand-light-skin-tone" />
 			</EmojiProvider>
-			<p>Console.log("</p>
+			<p>console.log("</p>
 			<article>Hello, my name is Wook</article>
 			<article>
 				I am a Front End Developer who loves to code and solve real-world

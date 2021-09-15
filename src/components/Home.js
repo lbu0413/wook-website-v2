@@ -22,9 +22,6 @@ const StyledHome = styled.main`
 	.welcome-text {
 		font-size: 3rem;
 	}
-	.emoji {
-		image-resolution: inherit;
-	}
 `;
 
 const StyledIcons = styled.div`

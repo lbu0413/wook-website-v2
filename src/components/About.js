@@ -75,24 +75,25 @@ const About = () => {
 				problems.
 			</article>
 			<article>
-				My background before coding is music production and I think music
-				producers and software developers are similar in a way that they both
-				create something useful for users from nothing.
+				I came from a non-traditional background: music production. I believe
+				music producers and software developers are similar in a way that they
+				both create something valuable for users from nothing.
 			</article>
 			<article>With that said, I'm a user-oriented developer :)</article>
 			<article>
-				Even after graduating from school, I pushed commits on Github everyday,
+				Even after graduating from school, I pushed commits on Github every day,
 				made multiple personal projects, and solved a lot of coding challenges
 				to sharpen my algorithms and data structures skills.
 			</article>
 			<article>
-				Also I have experience building a web application for a non-profit
+				Also, I have experience building a web application for a non-profit
 				organization with 4 other developers and 4 data scientists.
 			</article>
 			<article>
 				From that experience, I learned how to contribute to a project as a
 				front-end or back-end developer.
 			</article>
+			<article>Thank you</article>
 			<p>{'")'}</p>
 			<span>
 				const learnMoreAboutMe = [

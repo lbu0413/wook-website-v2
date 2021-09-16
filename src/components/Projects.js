@@ -33,8 +33,11 @@ const StyledProjects = styled.div`
 	img {
 		width: 200px;
 		height: 200px;
-		border-radius: 20px;
-		box-shadow: 0 4px 6px rgba(50, 50, 93, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+		border-radius: 10px;
+		/* box-shadow: 0 4px 6px rgba(50, 50, 93, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4); */
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+			rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+			rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 	}
 `;
 const StyleEachProject = styled.div`

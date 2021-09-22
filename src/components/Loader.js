@@ -10,7 +10,7 @@ const StyledLoader = styled.div`
 	align-items: center;
 	height: 100vh;
 	& > span {
-		font-size: 150px;
+		font-size: 140px;
 	}
 	.loader {
 		font-size: 160px;

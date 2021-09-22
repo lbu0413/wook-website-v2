@@ -40,7 +40,7 @@ const StyleAbout = styled.div`
 		margin-top: 40px;
 	}
 	span {
-		font-size: 1rem;
+		font-size: 1.5rem;
 		padding: 3px;
 		margin: 0;
 	}
@@ -52,11 +52,16 @@ const StyleAbout = styled.div`
 		color: darkgoldenrod;
 	}
 	@media (max-width: 720px) {
-		article {
+		article,
+		span {
 			font-size: 14px;
 		}
 		.emoji {
 			margin-top: 100px;
+		}
+		span {
+			width: 70%;
+			margin: 0 auto;
 		}
 		height: auto;
 	}
@@ -83,15 +88,20 @@ const About = () => {
 					problems.
 				</article>
 				<article>
-					I came from a non-traditional background: music production. I believe
-					music producers and software developers are similar in a way that they
-					both create something valuable for users from nothing.
+					I came from a non-traditional background: music production.
+				</article>
+				<article>
+					I believe music producers and software developers are similar in a way
+					that they both create something valuable for users from nothing.
 				</article>
 				<article>With that said, I'm a user-oriented developer :)</article>
 				<article>
 					Even after graduating from school, I pushed commits on Github every
-					day, made multiple personal projects, and solved a lot of coding
-					challenges to sharpen my algorithms and data structures skills.
+					day,
+				</article>
+				<article>
+					made multiple personal projects, and solved a lot of coding challenges
+					to sharpen my algorithms and data structures skills.
 				</article>
 				<article>
 					Also, I have experience building a web application for a non-profit
@@ -101,6 +111,7 @@ const About = () => {
 					From that experience, I learned how to contribute to a project as a
 					front-end or back-end developer.
 				</article>
+				<br />
 				<article>Thank you</article>
 			</StyleArticle>
 			<p>{'")'}</p>

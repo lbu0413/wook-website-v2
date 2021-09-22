@@ -29,7 +29,7 @@ const StyleAbout = styled.div`
 	flex-direction: column;
 	& > p {
 		color: skyblue;
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	width: 90%;
 	margin: auto;
@@ -37,7 +37,7 @@ const StyleAbout = styled.div`
 	overflow: hidden;
 
 	.emoji {
-		margin-top: 100px;
+		margin-top: 40px;
 	}
 	span {
 		font-size: 1rem;
@@ -48,9 +48,6 @@ const StyleAbout = styled.div`
 		margin-bottom: 10px;
 	}
 
-	article {
-		font-size: 1rem;
-	}
 	a {
 		color: darkgoldenrod;
 	}
@@ -58,8 +55,18 @@ const StyleAbout = styled.div`
 		article {
 			font-size: 14px;
 		}
+		.emoji {
+			margin-top: 100px;
+		}
 		height: auto;
 	}
+`;
+
+const StyleArticle = styled.div`
+	font-size: 1rem;
+	width: 70%;
+	margin: 0 auto;
+	/* text-align: start; */
 `;
 
 const About = () => {
@@ -69,31 +76,33 @@ const About = () => {
 				<Emoji className="emoji" name="man-raising-hand-light-skin-tone" />
 			</EmojiProvider>
 			<p>console.log("</p>
-			<article>Hello, my name is Wook</article>
-			<article>
-				I am a Front End Developer who loves to code and solve real-world
-				problems.
-			</article>
-			<article>
-				I came from a non-traditional background: music production. I believe
-				music producers and software developers are similar in a way that they
-				both create something valuable for users from nothing.
-			</article>
-			<article>With that said, I'm a user-oriented developer :)</article>
-			<article>
-				Even after graduating from school, I pushed commits on Github every day,
-				made multiple personal projects, and solved a lot of coding challenges
-				to sharpen my algorithms and data structures skills.
-			</article>
-			<article>
-				Also, I have experience building a web application for a non-profit
-				organization with 4 other developers and 4 data scientists.
-			</article>
-			<article>
-				From that experience, I learned how to contribute to a project as a
-				front-end or back-end developer.
-			</article>
-			<article>Thank you</article>
+			<StyleArticle>
+				<article>Hello, my name is Wook</article>
+				<article>
+					I am a Front End Developer who loves to code and solve real-world
+					problems.
+				</article>
+				<article>
+					I came from a non-traditional background: music production. I believe
+					music producers and software developers are similar in a way that they
+					both create something valuable for users from nothing.
+				</article>
+				<article>With that said, I'm a user-oriented developer :)</article>
+				<article>
+					Even after graduating from school, I pushed commits on Github every
+					day, made multiple personal projects, and solved a lot of coding
+					challenges to sharpen my algorithms and data structures skills.
+				</article>
+				<article>
+					Also, I have experience building a web application for a non-profit
+					organization with 4 other developers and 4 data scientists.
+				</article>
+				<article>
+					From that experience, I learned how to contribute to a project as a
+					front-end or back-end developer.
+				</article>
+				<article>Thank you</article>
+			</StyleArticle>
 			<p>{'")'}</p>
 			<span>
 				const learnMoreAboutMe = [

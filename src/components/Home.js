@@ -20,7 +20,7 @@ const StyledHome = styled.main`
 	overflow-y: hidden;
 
 	.welcome-text {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 `;
 
@@ -63,7 +63,7 @@ const Home = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setLoading(false);
-		}, 300);
+		}, 500);
 	}, []);
 
 	const handleFolders = (id) => {
@@ -94,9 +94,9 @@ const Home = () => {
 										clickAction={() => handleFolders(folder.id)}
 										to={"/" + folder.title}>
 										{folder.open === false ? (
-											<FcFolder size={90} />
+											<FcFolder size={85} />
 										) : (
-											<FcOpenedFolder size={90} />
+											<FcOpenedFolder size={85} />
 										)}
 									</DelayLink>
 									{folder.title}
@@ -108,7 +108,7 @@ const Home = () => {
 								href="https://docs.google.com/document/d/1IRoUr95figylabBdi2EN0RTwRO8q6AZ8n2mW5150Xts/edit?usp=sharing"
 								target="_blank"
 								rel="noreferrer">
-								<FcFile size={90} />
+								<FcFile size={85} />
 							</a>
 							resume
 						</StyledIcons>

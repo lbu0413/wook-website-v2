@@ -30,6 +30,7 @@ const StyleAbout = styled.div`
 	& > p {
 		color: skyblue;
 		font-size: 3rem;
+		margin: 0 auto;
 	}
 	width: 90%;
 	margin: auto;
@@ -60,7 +61,7 @@ const StyleAbout = styled.div`
 			margin-top: 100px;
 		}
 		span {
-			width: 70%;
+			width: 90%;
 			margin: 0 auto;
 		}
 		height: auto;
@@ -69,9 +70,26 @@ const StyleAbout = styled.div`
 
 const StyleArticle = styled.div`
 	font-size: 1rem;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
+	margin: 20px auto;
 	/* text-align: start; */
+	@media (max-width: 720px) {
+		margin: 10px auto;
+	}
+`;
+
+const StyleIcons = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	@media (max-width: 720px) {
+		margin-bottom: 20px;
+	}
+	.const {
+		color: #0d6efd;
+	}
 `;
 
 const About = () => {
@@ -111,37 +129,41 @@ const About = () => {
 					From that experience, I learned how to contribute to a project as a
 					front-end or back-end developer.
 				</article>
-				<br />
 				<article>Thank you</article>
 			</StyleArticle>
 			<p>{'")'}</p>
-			<span>
-				const learnMoreAboutMe = [
-				<a
-					href="https://www.github.com/lbu0413"
-					target="_blank"
-					rel="noreferrer">
-					<AiFillGithub size={25} />
-				</a>
-				,
-				<a
-					href="https://www.linkedin.com/in/vvooklee/"
-					target="_blank"
-					rel="noreferrer">
-					<AiFillLinkedin size={25} />
-				</a>
-				]
-			</span>
-			<span>
-				const techStacks = [<SiHtml5 size={25} />,<SiCss3 size={25} />,
-				<SiBootstrap size={25} />,
-				<SiJavascript size={25} />,
-				<SiTypescript size={25} />,<SiPython size={25} />,
-				<SiNodeDotJs size={25} />,<SiMongodb size={25} />,
-				<SiReact size={25} />,
-				<SiRedux size={25} />,<SiVueDotJs size={25} />,<SiWebpack size={25} />,
-				<SiEslint size={25} />, <SiFirebase size={25} />]
-			</span>
+			<StyleIcons>
+				<span>
+					<span className="const">const</span> learnMoreAboutMe = [
+					<a
+						href="https://www.github.com/lbu0413"
+						target="_blank"
+						rel="noreferrer">
+						<AiFillGithub size={25} />
+					</a>
+					,
+					<a
+						href="https://www.linkedin.com/in/vvooklee/"
+						target="_blank"
+						rel="noreferrer">
+						<AiFillLinkedin size={25} />
+					</a>
+					]
+				</span>
+				<span>
+					<span className="const">const</span> techStacks = [
+					<SiHtml5 size={25} />,
+					<SiCss3 size={25} />,
+					<SiBootstrap size={25} />,
+					<SiJavascript size={25} />,
+					<SiTypescript size={25} />,<SiPython size={25} />,
+					<SiNodeDotJs size={25} />,<SiMongodb size={25} />,
+					<SiReact size={25} />,
+					<SiRedux size={25} />,<SiVueDotJs size={25} />,<SiWebpack size={25} />
+					,
+					<SiEslint size={25} />, <SiFirebase size={25} />]
+				</span>
+			</StyleIcons>
 		</StyleAbout>
 	);
 };

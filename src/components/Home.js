@@ -105,7 +105,7 @@ const Home = () => {
 						})}
 						<StyledIcons>
 							<a
-								href="https://docs.google.com/document/d/1IRoUr95figylabBdi2EN0RTwRO8q6AZ8n2mW5150Xts/edit?usp=sharing"
+								href="https://docs.google.com/document/d/11Fss2ucmLz9n1KwF5-Snv4J13TuLSn9nRPJe7pTOIGI/edit?usp=sharing"
 								target="_blank"
 								rel="noreferrer">
 								<FcFile size={85} />

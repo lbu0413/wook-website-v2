@@ -130,34 +130,29 @@ const About = () => {
         </span>
       </StyleIcons>
       <StyleArticle>
-        <article>Hello, my name is Wook</article>
+        <article>Hey there, my name is Wook</article>
         <article>
-          I am a Front End Developer who loves to code and solve real-world
-          problems.
+          I am a Software Engineer with a passion for coding and tackling
+          real-world challenges.
         </article>
         <article>
-          I came from a non-traditional background: music production.
+          My journey into development stems from a non-traditional background in
+          music production.
         </article>
         <article>
-          I believe music producers and software developers are similar in a way
-          that they both create something valuable for users from nothing.
+          I see parallels between music producers and software developers - both
+          craft something valuable from nothing.
         </article>
-        <article>With that said, I'm a user-oriented developer :)</article>
+        <article>Being a user-oriented developer is my forte!</article>
         <article>
-          Even after graduating from school, I pushed commits on Github every
-          day,
-        </article>
-        <article>
-          made multiple personal projects, and solved a lot of coding challenges
-          to sharpen my algorithms and data structures skills.
+          My commitment to improvement shines through GitHub commits, personal
+          projects, and solving leetcode problems to enhance my algorithmic and
+          data structures skills.
         </article>
         <article>
-          Also, I have experience building a web application for a non-profit
-          organization with 4 other developers and 4 data scientists.
-        </article>
-        <article>
-          From that experience, I learned how to contribute to a project as a
-          front-end or back-end developer.
+          I also have an internship experience as a Software Engineer! I've
+          delved into few collaborative projects alongside other developers as
+          well :)
         </article>
         <article>Thank you</article>
       </StyleArticle>

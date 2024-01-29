@@ -6,6 +6,7 @@ import { FcFolder, FcOpenedFolder, FcFile } from "react-icons/fc";
 // import { EmojiProvider, Emoji } from "react-apple-emojis";
 // import emojiData from "react-apple-emojis/lib/data.json";
 import DelayLink from "react-delay-link";
+import wookIcon from "../img/wook-icon.png";
 
 const StyledHome = styled.main`
   box-sizing: border-box;
@@ -85,7 +86,7 @@ const Home = () => {
         <Loader />
       ) : (
         <>
-          <p className="welcome-text">Hello, My name is Wook</p>
+          <p className="welcome-text">Hello, my name is Wook</p>
           <div className="emoji">🙋‍♂️</div>
           <StyledIconsContainer>
             {folders.map((folder) => {

@@ -68,7 +68,7 @@ const StyleAbout = styled.div`
 `;
 
 const StyleArticle = styled.div`
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 100%;
   margin: 0 auto;
   margin: 20px auto;
@@ -154,6 +154,7 @@ const About = () => {
           delved into few collaborative projects alongside other developers as
           well :)
         </article>
+        <br></br>
         <article>Thank you</article>
       </StyleArticle>
     </StyleAbout>

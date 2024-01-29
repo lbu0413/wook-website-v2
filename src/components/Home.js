@@ -108,7 +108,7 @@ const Home = () => {
             })}
             <StyledIcons>
               <a
-                href="https://docs.google.com/document/d/1IRoUr95figylabBdi2EN0RTwRO8q6AZ8n2mW5150Xts/edit"
+                href="https://docs.google.com/document/d/1iMDqtw2HSwWwigWeS9lQ_ZCxt5dBDbjfz43diFnCBu8/edit"
                 target="_blank"
                 rel="noreferrer"
               >
